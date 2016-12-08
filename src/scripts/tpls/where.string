@@ -1,0 +1,28 @@
+<div class="where_city">
+    <header>
+        <a href="./index.html">
+            <i class="fdayicon fdayicon-navback"></i>
+        </a>
+        <div>
+            城市列表
+        </div>
+    </header>
+    <section>
+        <div class="where">
+            <h5>当前位置</h5>
+            <div></div>
+        </div>
+        <div class="city_list">
+            <h5>省/市列表</h5>
+            <div id="city_scroll">
+                  <script id="list" type="text/html">
+                    <ul>
+                      {{each data as value i}}
+                      <li>{{value.city}}</li>
+                      {{/each}}
+                    </ul>
+                  </script>
+            </div>
+        </div>
+    </section>
+</div>

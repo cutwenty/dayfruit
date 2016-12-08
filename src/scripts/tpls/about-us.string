@@ -1,0 +1,40 @@
+<div class="container">
+    <header>
+       <ul>
+          <li id="m-home" class="fdayicon-home fdayicon"></li>
+          <li>关于我们</li>
+          <li class="fdayicon fdayicon-contact"></li>
+       </ul>
+    </header>
+    <section>
+       <div class="content">
+          <ul>
+            <li>
+               <h4>公司介绍</h4>
+               <p class="introduce">天天果园（Fruitday）隶属于上海美滋数字科技有限公司，是一家提供高品质鲜果产品和鲜果服务公司。天天果园创办者有着超过30年的水果食品行业经验，因为热爱，所以专注，让鲜果爱好者用最省心、舒心的方式，品尝到时节顶级品质的鲜果美食是我们永恒追求的目标。</p>
+            </li>
+            <li>
+               <h4>联系方式</h4>
+               <table>
+                  <tr>
+                    <td>公司名称：</td>
+                    <td>上海美滋数字科技有限公司</td>
+                  </tr>
+                  <tr>
+                    <td>联系电话：</td>
+                    <td>021-60368500</td>
+                  </tr>
+                  <tr>
+                    <td>客服热线：</td>
+                    <td>4007200770</td>
+                  </tr>
+                  <tr>
+                    <td>联系地址</td>
+                    <td>上海浦东新区康桥路787号5号楼218室</td>
+                  </tr>
+               </table>
+            </li>
+          </ul>
+       </div>
+    </section>
+</div>

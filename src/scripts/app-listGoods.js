@@ -1,0 +1,1 @@
+require('./views/listGoods.js');

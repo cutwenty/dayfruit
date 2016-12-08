@@ -1,0 +1,25 @@
+<header>
+  <a href="http://localhost:8090/index.html"><span class="left"><i class="fdayicon fdayicon-home"></i></span></a>
+  <span class="title">购物车</span>
+  <a href="#"><span class="right"><i class="fdayicon fdayicon-login"></i></span></a>
+</header>
+<section class="content">
+  <div class="scroll-content">
+    <div class="blank-cart">
+      <span><i class="fdayicon fdayicon-procart"></i></span>
+      <h4>您的购物车现在是空的噢~</h4>
+      <h5>现在就去选购吧</h5>
+      <a href="#" class="btn">去逛逛</a>
+    </div>
+    <div class="goodList">
+      <ul class="cart-item">
+      </ul>
+      <div class="item-tip">
+        <i>包</i>
+        上海(外环以内)满100元包邮，还差10.20元，去凑单
+      </div>
+    </div>
+  </div>
+</section>
+<!-- <scetion class="download"> -->
+<!-- </scetion> -->

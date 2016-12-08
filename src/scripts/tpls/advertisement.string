@@ -1,0 +1,12 @@
+<div class="component-download clearfix" id="downloadApp" >
+  <div class="close">
+    <span class="glyphicon glyphicon-remove"></span>
+  </div>
+  <span class="pull-left">
+    <img class="m-img" src="/images/wang/logo-m.svg">
+  </span>
+  <span class="pull-center m-tips">下载果园App，立享专属优惠<br>天天到家，2小时闪电送达</span>
+  <span class="pull-right">
+    <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.ttxg.fruitday">立刻体验</a>
+  </span>
+</div>

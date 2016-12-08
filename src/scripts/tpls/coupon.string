@@ -1,0 +1,18 @@
+<div class="container">
+  <header>
+    <ul>
+      <li id="m-index" class="fdayicon-home fdayicon"></li>
+      <li class="login">优惠券</li>
+      <li class="reg"><a href="cart.html"><span class="fdayicon fdayicon-cart"></span></a></li>
+    </ul>
+  </header>
+  <section>
+    <div class="box">
+      <div class="unfinished-order">
+        <i></i>
+        <span class="fdayicon fdayicon-coupon icon"></span>
+        <h4>您还没有优惠券~</h4>
+      </div>
+    </div>
+  </section>
+</div>

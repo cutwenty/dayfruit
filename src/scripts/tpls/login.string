@@ -1,0 +1,36 @@
+<div class="container">
+    <header>
+       <ul>
+         <li id="index-m" class="fdayicon-home fdayicon" url='index.html'></li>
+         <li class="login">登录</li>
+         <li class="reg"><span id='goreg' data-url='./register.html'>注册</span> </li>
+       </ul>
+    </header>
+    <section>
+      <div class="loginbox">
+         <div class="tipbox">
+           <div id="tip">不要心急哟，账号或密码还空着呐！</div>
+         </div>
+         <div class="username">
+           <span class="usericon">
+              <span class="glyphicon glyphicon-user"></span>
+           </span>
+           <input id="username" type="text" name="name" value="" placeholder="手机号/邮箱">
+         </div>
+         <div class="username">
+           <span class="usericon">
+              <span class="glyphicon glyphicon-lock"></span>
+           </span>
+           <input id="password" type="password" name="name" value="" placeholder="请输入密码">
+         </div>
+         <div class="login">
+            <button type="button" name="button" id="loginbtn">登录</button>
+         </div>
+         <div class="forget">
+            <a href="fast">快捷登录</a>
+
+            <a href="forget">忘记密码</a>
+         </div>
+      </div>
+    </section>
+</div>

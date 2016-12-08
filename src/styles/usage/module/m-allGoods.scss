@@ -1,0 +1,233 @@
+html, body {
+  font-size: 31.25vw;
+  width: 100%;
+}
+.container {
+  @include flexbox();
+  @include flex-direction(column);
+  width: 100%;
+  height: 100%;
+  background: blue;
+  header {
+    height: .44rem;
+    ul {
+      @include flexbox();
+      width: 100%;
+      height: 100%;
+      background: #64a131;
+      li {
+        color: white;
+        font-size: .18rem;
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(center);
+        &:nth-child(2) {
+          position: relative;
+          @include box-sizing();
+          /* box-sizing: border-box;*/
+          @include flex(1);
+          &:before {
+            content: "";
+            position: absolute;
+            top: .08rem;
+            left: .05rem;
+            width: 18px;
+            height: 25px;
+            line-height: .3rem;
+            background: url('/images/liqi/search-icon.png') 0 -47px;
+            background-size: 100%;
+            color: #a7a7a7;
+            font-size: .175rem;
+          }
+          input[type=search] {
+            @include border-radius(.04rem);
+            /*   border-radius: .04rem;*/
+            display: block;
+            font-size: .14rem;
+            width: 100%;
+            height: .3rem;
+            @include border(1px #ccc solid);
+            /*border:1px solid #ccc;*/
+            @include box-sizing();
+            /*   box-sizing:border-box;*/
+
+            padding: .05rem .05rem .05rem .3rem;
+            background: rgba(255, 255, 255, .75);
+            color: #323232;
+
+          }
+
+        }
+        &:not(:nth-child(2)) {
+          font-size: .18rem;
+          padding: .1rem;
+        }
+        &:nth-child(3) {
+          a{
+            color:white;
+          }
+          i {
+            margin-left: .1rem;
+          }
+        }
+
+      }
+
+    }
+  }
+  section {
+
+    @include flex(1);
+    @include flexbox();
+    @include justify-content(row);
+    height: 100%;
+    width: 100%;
+
+    background: black;
+    aside {
+      width: .8rem;
+      background: yellow;
+      height: 100%;
+      ul {
+        width: 100%;
+        height: 100%;
+        background: #f1f1f1;
+        @include border(0px 1px 0px 0px, #e0e0e0, solid);
+        /*  border-right:1px solid #e0e0e0;*/
+        li {
+          height: .46rem;
+          @include border(0 0 1px 0, #e0e0e0, solid);
+          width: 100%;
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            line-height: .46rem;
+            color: #323232;
+            text-align: center;
+            font-size: .14rem;
+          }
+
+        }
+      }
+    }
+    article {
+      overflow-y: scroll;
+      @include flex(1);
+      background: white;
+      padding: 10px 5px 0 0;
+      .goods1 {
+        width: 100%;
+        ul {
+          width: 100%;
+          @include flexbox();
+          @include flex-direction(row);
+          @include flex-wrap(wrap);
+          li {
+            width: 33.33%;
+            margin-bottom: .1rem;
+            a {
+              display: block;
+              width: 100%;
+              color: #323232;
+              text-align: center;
+              font-size: .12rem;
+              img {
+                width: 100%;
+                margin-bottom: .05rem;
+              }
+            }
+          }
+
+        }
+      }
+
+    }
+
+  }
+  .diglo {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1400;
+    background: white;
+    .head {
+      width: 100%;
+      height: .47rem;
+      padding: 0.09rem 0.08rem;
+
+      @include border(0 0 1px 0, #eee, solid);
+      .headIn {
+        @include flexbox();
+        @include justify-content(center);
+        @include align-items(center);
+        @include flex-direction(row);
+        font-size: .14rem;
+        height: .28rem;
+        width: 100%;
+        form {
+          @include border-radius(.04rem);
+          @include flex(1);
+          @include flexbox();
+          @include flex-direction(row);
+          height: 100%;
+          background: #eee;
+          i {
+            padding: 0 0.08rem
+          }
+          i:before {
+            content: "";
+            display: block;
+            width: .18rem;
+            height: .23rem;
+            padding-left: 0.04rem;
+
+            background: url('/images/liqi/search-icon.png') 0 -0.5rem;
+            background-size: 100%;
+
+          }
+          input[type=search] {
+            height: 100%;
+            border: none;
+            background: #eee;
+          }
+        }
+        span {
+          color: #65a032;
+          font-size: .14rem;
+          line-height: .28rem;
+          padding-left: .08rem;
+          float: right;
+        }
+      }
+
+    }
+    .hotSearch {
+      margin-top: .2rem;
+      padding: .04rem;
+      p {
+        font-size: .14rem;
+        padding: 0 0.04rem;
+        color: #999;
+      }
+      li {
+        font-size: .14rem;
+        float: left;
+        a {
+          background: #eee;
+          @include border-radius(0.04rem);
+          display: inline-block;
+          margin: .1rem .04rem 0 .04rem;
+          padding: 0.04rem .06rem;
+          font-size: .14rem;
+          color: #3a3a3a;
+
+        }
+
+      }
+    }
+  }
+}

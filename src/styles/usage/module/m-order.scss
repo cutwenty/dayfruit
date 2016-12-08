@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  @include flexbox();
+  flex-direction: column;
+  height: 100%;
+  background-color: #f8f8f8;
+  header {
+    height: 44px;
+    background: $baseColor;
+    ul {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      li {
+        text-align: center;
+        line-height: 44px;
+        font-size: 18px;
+        color: rgba(255,255,255,0.9);
+        &:nth-child(1) {
+          height: 100%;
+          width: 42px;
+        }
+        &:nth-child(2) {
+          padding-left: 8px;
+          height: 100%;
+          flex: 1;
+          font: 17.5px/44px 'microsoft yahei';
+        }
+        &:nth-child(3) {
+          height: 100%;
+          width: 40px;
+          span {
+            height: 24px;
+            font-size: 18px;
+            color: rgba(255,255,255,0.9);
+          }
+        }
+      }
+    }
+  }
+  section {
+    flex: 1;
+    background: #f1f1f1;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    .box {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      ul {
+        width: 100%;
+        background: -webkit-gradient(linear,0 0,0 100%,from(#f8f8fa),to(#ecedf0));
+        height: 32px;
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+        display: flex;
+        li {
+          font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+          display: flex;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          flex: 1;
+          border-radius: 5px 0 0 5px;
+          border-right: 1px solid #e0e0e0;
+          color: #646464;
+          &.active {
+            background: #fff;
+            color: #323232;
+          }
+        }
+      }
+      .unfinished-order {
+        width: 100%;
+        text-align: center;
+        .icon {
+            font-size: 63px;
+            display: inline-block;
+            color: #a7a7a7;
+            margin: 100px 0 5px;
+        }
+        h4 {
+          font-size: 18px;
+          margin: 10px 0;
+          font-weight: normal;
+          text-align: center;
+          line-height: 1;
+          color: #333;
+        }
+      }
+    }
+  }
+}

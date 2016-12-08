@@ -1,0 +1,84 @@
+body{
+    background: #fff;
+    .where_city{
+        height: 100%;
+        @include  flexbox();
+        @include  flex-direction(column);
+        width:100%;
+        height:100%;
+        header{
+            position: relative;
+            height: 44px;
+            background: #64a131;
+            a{
+                @include  flexbox();
+                justify-content: center;
+                float: left;
+                width: 38px;
+                height: 44px;
+                font: 18px/44px 'microsoft yahei';
+                i{
+                    color: #fff;
+                    line-height: 44px;
+                }
+            } 
+            div{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 200px;
+                height: 34px;
+                margin-left: -100px;
+                margin-top: -17px;
+                text-align: center;
+                color: #fff;
+                font: 18px/34px 'microsoft yahei';
+            }
+        }
+        section{
+            flex: 1;
+            @include  flexbox();
+            @include  flex-direction(column);
+            .where{
+                h5{
+                    font-weight: normal;
+                    background: #f1f1f1;
+                    font-size: 14px;
+                    line-height: 22px;
+                    padding: 10px;
+                }
+                div{
+                    padding: 10px 20px;
+                    line-height: 22px;
+                    font-size: 14px;
+                }
+            }
+            .city_list{
+                flex: 1;
+                @include  flexbox();
+                @include  flex-direction(column);
+                h5{
+                    font-weight: normal;
+                    background: #f1f1f1;
+                    font-size: 14px;
+                    line-height: 22px;
+                    padding: 10px;
+                }
+                #city_scroll{
+                    height: 100%;
+                    overflow: hidden;
+                    ul{
+                        padding: 0 10px;
+                        li{
+
+                            padding: 10px;
+                            line-height: 22px;
+                            font-size: 14px;
+                            border-bottom: 1px solid #f1f1f1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

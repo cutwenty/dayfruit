@@ -1,0 +1,106 @@
+<div class="w-container">
+  <header>
+    <div class="head w-left">
+      <a href="./where.html" style="color:#fff;">
+        <span class="fdayicon fdayicon-local"></span>
+        <span class="curr-region-name"></span>
+      </a>
+    </div>
+    <div class="head w-center">
+      <span class="navbar-title"><img src="/dayfruit/images/wang/logo.svg"></span>
+    </div>
+    <div class="head w-right">
+      <a href="about-us.html" style="color:#fff;">
+        <span class="glyphicon glyphicon-info-sign"></span>
+      </a>
+      <span class="fdayicon fdayicon-contact"></span>
+      <a href="cart.html" style="color:#fff;">
+        <span class="fdayicon fdayicon-cart">
+          <i class="cart-sale-nums"></i>
+        </span>
+      </a>
+    </div>
+  </header>
+  <!-- 滚动到顶部 -->
+  <div class="w-component-float">
+      <ul class="list-unstyled">
+          <li id="goToTop">
+            <span class="fdayicon fdayicon-toTop"></span>
+          </li>
+      </ul>
+  </div>
+  <div class="main">
+    <!-- IScroll -->
+    <div id="w-index-scroll">
+      <div class="scroll">
+        <div class="head" id="fresh-head">
+          <img src="/dayfruit/images/wang/arrow.png"/>
+          <span>下拉刷新...</span>
+        </div>
+        <nav>
+          <ul id="nav-list">
+            <li>
+              <div class="nav-img-box">
+                <span class="fdayicon fdayicon-day"></span>
+              </div>
+              <span class="nav-img-desc">闪电送</span>
+            </li>
+            <li>
+              <div class="nav-img-box">
+                <span class="fdayicon fdayicon-all"></span>
+              </div>
+              <span class="nav-img-desc">全部商品</span>
+            </li>
+            <li>
+              <div class="nav-img-box">
+                <span class="fdayicon fdayicon-order"></span>
+              </div>
+              <span class="nav-img-desc">查询订单</span>
+            </li>
+            <li>
+              <div class="nav-img-box">
+                <span class="fdayicon fdayicon-login"></span>
+              </div>
+              <span class="nav-img-desc">我的果园</span>
+            </li>
+          </ul>
+        </nav>
+        <section id="w-index-sec">
+          <!-- 轮播图-->
+          <div id="w-list-box">
+
+          <!-- 模板数据列表-->
+          </div>
+
+        </section>
+        <div class="foot" id="fresh-foot">
+          <img src="/dayfruit/images/wang/arrow.png"/>
+          <span>上拉加载更多...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 主页轮播图模板 -->
+<script id="banner" type="text/html">
+  <div class="swiper-container index-banner">
+    <div class="swiper-wrapper">
+      {{each data as value i}}
+      <div class="swiper-slide">
+        <img src=/dayfruit/images/wang/{{value.img}} alt="">
+      </div>
+      {{/each}}
+    </div>
+    <div class="swiper-pagination index-pagination"></div>
+  </div>
+</script>
+
+<!-- 主页列表模板 -->
+<script id="list" type="text/html">
+  <ul class="index-list">
+    {{each data as value i}}
+    <li><a href = detail.html?id={{value.id}}><img src = /dayfruit/images/wang/{{value.img}} alt=""></a></li>
+    {{/each}}
+  </ul>
+</script>

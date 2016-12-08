@@ -1,0 +1,1 @@
+!function(o){function n(r){if(t[r])return t[r].exports;var e=t[r]={exports:{},id:r,loaded:!1};return o[r].call(e.exports,e,e.exports,n),e.loaded=!0,e.exports}var t={};return n.m=o,n.c=t,n.p="",n(0)}([function(o,n,t){o.exports=t(1)},function(o,n){$("#downloadApp .close").on("tap",function(){$("#downloadApp").addClass("hide")})}]);

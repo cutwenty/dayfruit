@@ -1,0 +1,19 @@
+<li class="list-item">
+  <div class="head">
+    <span class="tele">{{tele}}</span>
+    <span>
+      <i class="fdayicon fdayicon-star-empty"></i>
+      <i class="fdayicon fdayicon-star-empty"></i>
+      <i class="fdayicon fdayicon-star-empty"></i>
+      <i class="fdayicon fdayicon-star-empty"></i>
+      <i class="fdayicon fdayicon-star-empty"></i>
+    </span>
+  </div>
+  <p class="body">{{body}}</p>
+  <div class="envaluation-shows">
+    {{each showImgs as img i}}
+    <img class="envaluation-img" data-original="{{img}}" src="/images/huang/EmptyList@2x.png"/>
+    {{/each}}
+  </div>
+  <span class="foot">{{time}}</span>
+</li>

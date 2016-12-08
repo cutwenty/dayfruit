@@ -1,0 +1,96 @@
+<div class="container">
+     <header>
+         <ul>
+             <a href="index.html"><li class="fdayicon fdayicon-home"></li></a>
+             <li>
+                 <input type="search" placeholder="寻找鲜果" class="formHead">
+             </li>
+             <li>
+                <a href="cart.html" ><i class="fdayicon fdayicon-cart"></i></a>
+                 <i class="fdayicon fdayicon-login"></i>
+             </li>
+         </ul>
+     </header>
+    <section>
+        <aside>
+            <ul>
+                <li>
+                    <a href="#">水润一秋</a>
+                </li>
+                <li>
+                    <a href="#">国庆你好</a>
+                </li>
+                <li>
+                    <a href="#">新鲜水果</a>
+                </li>
+                <li>
+                    <a href="#">肉类禽蛋</a>
+                </li>
+                <li>
+                    <a href="#">蔬菜瓜果</a>
+                </li>
+                <li>
+                    <a href="#">水产海鲜</a>
+                </li>
+                <li>
+                    <a href="#">零食饮品</a>
+                </li>
+                <li>
+                    <a href="#">速食调料</a>
+                </li>
+
+            </ul>
+
+        </aside>
+        <article>
+            <div class="goods1">
+                <script id="list" type="text/html">
+                     <ul>
+                        {{each data as value i}}
+                        <li><a href={{value.url}}><img src={{value.src}}>
+                                {{value.name}}
+                            </a>
+                        </li>
+                         {{/each}}
+                    </ul>
+                </script>
+            </div>
+
+
+        </article>
+    </section>
+    <div class="diglo">
+        <div class="head">
+          <div class="headIn">
+
+              <form >
+                  <i></i>
+                  <input type="search" placeholder="奇异果">
+              </form>
+              <span>
+                  取消
+              </span>
+          </div>
+
+        </div>
+        <div class="hotSearch">
+            <p>热门搜索</p>
+            <ul>
+                <li><a href="listGoods.html?0">奇异果</a></li>
+                <li><a href="listGoods.html?1">鸡</a></li>
+                <li><a href="listGoods.html?2">鱼</a></li>
+                <li><a href="listGoods.html?3">蓝莓</a></li>
+                <li><a href="listGoods.html?4">国外</a></li>
+                <li><a href="listGoods.html?5">蛋</a></li>
+                <li><a href="listGoods.html?6">年糕</a></li>
+                <li><a href="listGoods.html?7">梨</a></li>
+                <li><a href="listGoods.html?8">红提</a></li>
+                <li><a href="listGoods.html?9">脐橙</a></li>
+                <li><a href="listGoods.html?10">牛油果</a></li>
+                <li><a href="listGoods.html?11">榴莲</a></li>
+                <li><a href="listGoods.html?12">火龙果</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>

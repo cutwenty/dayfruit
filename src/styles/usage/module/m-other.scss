@@ -1,0 +1,267 @@
+$headerBackground:#64a131;
+$fontFamily:"microsoft yahei";
+@mixin headfontIcon{
+  @media screen and (max-width:320px){
+    font-size:0.16rem;
+  }
+  @media screen and (min-width:320px){
+    font-size:0.18rem;
+  }
+  @media screen and (min-width:375px){
+    font-size:0.19rem;
+  }
+}
+@mixin fontSizeAdapter {
+  @media screen and (min-width:769px){
+    font-size:20px;
+  }
+  @media screen and (max-width:768px){
+    font-size:18px;
+  }
+  @media screen and (max-width:414px){
+    font-size:16px;
+  }
+  @media screen and (max-width:375px){
+    font-size:14px;
+  }
+  @media screen and (max-width:320px){
+    font-size:12px;
+  }
+}
+
+.w-container{
+  width:100%;
+  height:100%;
+
+  background:#fff;
+  @include flexbox();
+  @include flex-direction(column);
+  header{
+    font-family: $fontFamily;
+    position: relative;
+    z-index: 22;
+    height:0.44rem;
+    width:100%;
+    background: $headerBackground;
+    @include flexbox();
+    color:#fff;
+
+    .w-left{
+      padding-top: 0.1rem;
+      width:1.05rem;
+      height:100%;
+      a.home{
+        color:#fff;
+      }
+      span{
+        &.fdayicon-home{
+          margin-left:0.1rem;
+        }
+        @include headfontIcon();
+      }
+    }
+    .w-right{
+      width:1.05rem;
+      height:100%;
+      padding-top:0.1rem;
+
+      span{
+        float: right;
+        margin-right:0.1rem;
+        @include headfontIcon();
+        position: relative;
+        .cart-sale-nums{
+          display: none;
+          position: absolute;
+          top: -3px;
+          right: -5px;
+          @media screen and (max-width:320px){
+            width: 16px;
+            height: 16px;
+            line-height: 16px;
+          }
+          @media screen and (min-width:321px){
+            width: 18px;
+            height: 18px;
+            line-height: 18px;
+          }
+          @media screen and (min-width:375px){
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+          }
+          text-align: center;
+          border-radius: 50%;
+          background: #c9302c;
+          font-style: normal;
+          font-size: 12px;
+          color: #fff;
+          z-index: 10;
+          &.active{
+            display: block;
+          }
+        }
+
+      }
+    }
+    .w-center{
+      @include flex(1);
+      padding-top:0.04rem;
+      text-align: center;
+
+      .navbar-title{
+        line-height: 0.34rem;
+        color: rgba(255,255,255,0.95);
+        overflow: hidden;
+        font-size:0.16rem;
+      }
+    }
+  }
+
+  section{
+
+    @include flex(1);
+    overflow: hidden;
+    background: #f1f1f1;
+    width:100%;
+    #other-scroll{
+      width:100%;
+      height:100%;
+
+    }
+    .user-info-box{
+      width:100%;
+      height:1.34rem;
+      padding: 15px 0;
+      color: #323232;
+      text-shadow: 0 0 3px rgba(0,0,0,.2);
+      text-align:center;
+      .user-head{
+        width:0.8rem;
+        height:0.8rem;
+        margin:0 auto;
+        border-radius: 50%;
+        border: 0.02rem solid rgba(255,255,255,.95);
+        box-shadow: 0 0 0.02rem rgba(0,0,0,.2);
+        img{
+          width:100%;
+          height:100%;
+          border-radius:50%;
+        }
+      }
+      .user-phone{
+        color:#323232;
+        text-shadow: 0 0 3px rgba(0,0,0,.2);
+      }
+    }
+    .user-content{
+      width:100%;
+      padding:0 10px;
+      li{
+        padding: 0 10px;
+        margin-bottom: 10px;
+        background: #fff;
+        .user-item{
+          padding:12px 0px;
+          border-bottom: 1px solid #f1f1f1;
+          font-size: 0.14rem;
+          a{
+            color:#323232;
+            display: block;
+            padding: 0 0 0 0.3rem;
+            position:relative;
+            &:before{
+              position:absolute;
+              left: 0;
+              top: 50%;
+              margin-top: -0.1rem;
+              width: 0.2rem;
+              height: 0.2rem;
+              font: 0.2rem/0.2rem 'icomoon';
+              color: #a7a7a7;
+            }
+            &:after{
+              position: absolute;
+              right:0;
+              top:50%;
+              margin-top: -0.1rem;
+              width: 0.2rem;
+              height: 0.2rem;
+              font: 0.2rem/0.2rem 'icomoon';
+              color: #a7a7a7;
+            }
+            span{
+              margin-right: 0.18rem;
+              color: #f6ab00;
+            }
+            .pull-right{
+              float: right !important;
+            }
+          }
+          .user-order:before {
+            content: '\e636';
+          }
+          .user-order::after{
+            content: '\e610';
+          }
+          .user-address::before{
+            content: '\e640';
+          }
+          .user-address::after{
+            content: '\e610';
+          }
+          .user-level::before{
+            content: '\e63f';
+          }
+          .user-score::before{
+            content: '\e639';
+          }
+          .user-balance::before{
+            content:'\e63a';
+          }
+          .user-coupon::before{
+            content: '\e63b';
+          }
+          .user-gift::before {
+            content: '\e63c';
+          }
+          .user-info:before {
+            content: '\e647';
+          }
+        }
+      }
+    }
+
+    .user-quit{
+      width:100%;
+      padding:0 10px 10px;
+      button{
+        width:100%;
+        background:#f6ab00;
+        color:#fff;
+        text-align:center;
+        margin-bottom: 0;
+        font-weight: 400;
+        touch-action: manipulation;
+        border: 1px solid transparent;
+        @media screen and (max-width:320px){
+          padding: 0.06rem 0.12rem;
+        }
+        @media screen and (min-width:321px){
+          padding: 0.06rem 0.12rem;
+        }
+        @media screen and (min-width:375px){
+          padding: 0.06rem 0.12rem;
+        }
+        @media screen and (min-width:414px){
+          padding: 0.05rem 0.1rem;
+        }
+        @media screen and (min-width:768px){
+          padding: 0.046rem 0.086rem;
+        }
+        @include fontSizeAdapter;
+        border-radius: 6px;
+      }
+    }
+  }
+}

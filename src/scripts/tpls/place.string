@@ -1,0 +1,41 @@
+<div class="where_city">
+    <header>
+        <a href="./index.html">
+            <i class="fdayicon fdayicon-navback"></i>
+        </a>
+        <div>
+        选择您的楼宇
+        </div>
+    </header>
+    <section>
+        <div class="shuru">
+            <div class="search">
+                <i class="fdayicon o2oicon-search"></i>
+                <input type="text" name="name" placeholder="搜索支持配送的楼宇">
+            </div>
+            <div class="queding">确定</div>
+            <div class="quxiao">取消</div>
+        </div>
+        <div class="now_place">
+            <span>当前位置:&nbsp;</span>
+            <span></span>
+            <i></i>
+        </div>
+        <div class="change">目前地点<span>上海</span>，如需切换城市，请至首页定位</div>
+        <div class="tip">
+            <i class="o2oicon-building">附近支持配送的楼宇</i>
+        </div>
+        <div id="city_scroll">
+              <script id="list" type="text/html">
+                <ul>
+                  {{each data as value i}}
+                  <li>
+                      <p>{{value.p1}}</p>
+                      <p>{{value.p2}}</p>
+                  </li>
+                  {{/each}}
+                </ul>
+              </script>
+        </div>
+    </section>
+</div>

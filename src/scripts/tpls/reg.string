@@ -1,0 +1,53 @@
+<div class="container">
+    <header>
+       <ul>
+         <li id="m-home" class="fdayicon-home fdayicon"></li>
+         <li class="login">注册</li>
+         <li class="reg"></li>
+       </ul>
+    </header>
+    <section>
+      <div class="loginbox">
+        <div class="tipbox">
+          <div id="tip">不要心急哟，账号或密码还空着呐！</div>
+        </div>
+         <div class="username">
+           <span class="usericon">
+              <span class="glyphicon glyphicon-user"></span>
+           </span>
+           <input id="username"  type="text" name="name" value="" placeholder="请输入手机号码">
+         </div>
+         <div class="username">
+           <span class="usericon">
+              <span class="glyphicon glyphicon-lock"></span>
+           </span>
+           <input id="password" type="password" name="name" value="" placeholder="设置新密码">
+         </div>
+         <div class="username">
+           <span class="usericon">
+              <span class="glyphicon glyphicon-pencil"></span>
+           </span>
+           <input id="repassword" type="password" name="name" value="" placeholder="确认新密码">
+         </div>
+         <div class="username">
+           <input id="checknum" class="check" type="text" name="name" value="" placeholder="请输入验证码">
+           <span class="checkimg">
+              <img src="/images/yan/1.jpg" alt="验证码">
+           </span>
+         </div>
+         <div class="username">
+           <span class="usericon">
+              <span class="glyphicon glyphicon-send"></span>
+           </span>
+           <input class="phoneinput" type="text" name="name" value="" placeholder="输入手机验证码">
+           <span class="phonecheck">
+              <button type="button" name="button">点击获取</button>
+           </span>
+         </div>
+         <div class="login">
+            <button type="button" name="button" id="loginbtn">注册</button>
+         </div>
+
+      </div>
+    </section>
+</div>

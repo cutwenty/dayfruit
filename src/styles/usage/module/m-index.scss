@@ -1,0 +1,286 @@
+$headerBackground:#64a131;
+$fontFamily:"microsoft yahei";
+@mixin headfontIcon{
+  @media screen and (max-width:320px){
+    font-size:0.16rem;
+  }
+  @media screen and (min-width:320px){
+    font-size:0.18rem;
+  }
+  @media screen and (min-width:375px){
+    font-size:0.19rem;
+  }
+}
+@mixin fontSizeAdapter {
+  @media screen and (min-width:769px){
+    font-size:20px;
+  }
+  @media screen and (max-width:768px){
+    font-size:18px;
+  }
+  @media screen and (max-width:414px){
+    font-size:16px;
+  }
+  @media screen and (max-width:375px){
+    font-size:14px;
+  }
+  @media screen and (max-width:320px){
+    font-size:12px;
+  }
+}
+
+
+.w-container{
+  width:100%;
+  height:100%;
+  font-family: $fontFamily;
+  background:#fff;
+  @include flexbox();
+  @include flex-direction(column);
+  header{
+    // position: fixed;
+    position: relative;
+    z-index: 22;
+    height:0.44rem;
+    width:100%;
+    background: $headerBackground;
+    @include flexbox();
+    color:#fff;
+    .w-left{
+      padding-top: 0.1rem;
+      width:1.05rem;
+      height:100%;
+      span{
+        &.fdayicon-local{
+          margin-left:0.1rem;
+        }
+        @include headfontIcon();
+        &.curr-region-name{
+          font: 0.14rem/24px 'microsoft yahei';
+        }
+      }
+    }
+    .w-right{
+      width:1.05rem;
+      height:100%;
+      padding-top:0.1rem;
+
+      span{
+        float: right;
+        margin-right:0.1rem;
+        @include headfontIcon();
+        position: relative;
+        .cart-sale-nums{
+          display: none;
+          position: absolute;
+          top: -3px;
+          right: -5px;
+          @media screen and (max-width:320px){
+            width: 16px;
+            height: 16px;
+            line-height: 16px;
+          }
+          @media screen and (min-width:321px){
+            width: 18px;
+            height: 18px;
+            line-height: 18px;
+          }
+          @media screen and (min-width:375px){
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+          }
+          text-align: center;
+          border-radius: 50%;
+          background: #c9302c;
+          font-style: normal;
+          font-size: 12px;
+          color: #fff;
+          z-index: 10;
+          &.active{
+            display: block;
+          }
+        }
+
+      }
+    }
+    .w-center{
+      @include flex(1);
+      padding-top:0.04rem;
+      @include headfontIcon();
+      .navbar-title{
+        text-align: center;
+        line-height: 0.34rem;
+        color: rgba(255,255,255,0.95);
+        overflow: hidden;
+        img{
+          width:100%;
+          height:80%;
+        }
+      }
+    }
+  }
+  > .main{
+    @include flex(1);
+    overflow: hidden;
+    width:100%;
+    #w-index-scroll{
+      height:100%;
+      .scroll{
+        width:100%;
+        .head {
+          // display: none;
+          text-align: center;
+          height: 0.35rem;
+          line-height: 0.35rem;
+          img{
+            width: 0.16rem;
+            display: inline-block;
+            @include _prefix(transform,rotate(180deg));
+            @include _prefix(transition,transform 150ms);
+          }
+        }
+        .up {
+          @include _prefix(transform,rotate(360deg) !important);
+        }
+        .foot {
+          // display: none;
+          text-align: center;
+          height: 0.35rem;
+          line-height: 0.35rem;
+          img {
+            display: inline-block;
+            width: 0.16rem;
+            @include _prefix(transform,rotate(0deg));
+            @include _prefix(transition,transform 150ms);
+          }
+        }
+        .down {
+          @include _prefix(transform,rotate(180deg) !important);
+        }
+      }
+    }
+  }
+  nav{
+    padding:5px 10px;
+    width:100%;
+    ul{
+      width:100%;
+      @include flexbox();
+      li{
+        @include flex(1);
+        text-align: center;
+        a.kong{
+          display: block;
+        }
+        .nav-img-box{
+          height:0.48rem;
+          width: 0.48rem;
+          border-radius: 50%;
+          margin: 0 auto;
+          background:#FF9933;
+          span{
+            text-align: center;
+            line-height: 0.48rem;
+            font-size:0.24rem;
+            color:rgba(255,255,255,.9);
+          }
+        }
+        .nav-img-desc{
+
+          @include fontSizeAdapter;
+          line-height:20px;
+          color:#898989;
+        }
+        &:nth-child(2){
+          .nav-img-box{
+            background:#8796D8;
+          }
+        }
+        &:nth-child(3){
+          .nav-img-box{
+            background:#FE6F63;
+          }
+        }
+        &:nth-child(4){
+          .nav-img-box{
+            background:#0DBB71;
+          }
+        }
+      }
+    }
+  }
+  section{
+    padding:0px 10px;
+    .swiper-container{
+      width:100%;
+      height:0.967rem;
+      overflow: hidden;
+      .swiper-slide{
+        width:100%;
+        height:100%;
+        img{
+          width:100%;
+          height:100%;
+        }
+      }
+      .index-pagination{
+        .swiper-pagination-bullet{
+          background:#fff;
+          width:0.1rem;
+          height:0.1rem;
+        }
+      }
+    }
+    .index-list{
+      margin-top:10px;
+      li{
+        width:100%;
+        margin-bottom: 10px;
+        a{
+          display: block;
+          width:100%;
+          img{
+            width:100%;
+            max-height: 0.98rem;
+          }
+        }
+
+      }
+    }
+  }
+  //
+  .w-component-float{
+    display: none;
+    position: fixed;
+    width: 0.4rem;
+    right: 0.12rem;
+    bottom: 0.65rem;
+    z-index: 100;
+    &.active{
+      display: block;
+    }
+    ul{
+      margin-bottom: 0.1rem;
+      li{
+        height: 0.4rem;
+        width: 0.4rem;
+        border: 0.02rem solid #fff;
+        margin-top: 0.08rem;
+        background: #fcc;
+        border-radius: 50%;
+        box-shadow: 0 0 0.02rem rgba(0,0,0,0.3);
+        background: #d9534f;
+        line-height: 0.36rem;
+        text-align: center;
+        span{
+          width: 100%;
+          height: 100%;
+          line-height: 0.36rem;
+          color: #fff;
+          font-size: 0.18rem;
+        }
+      }
+    }
+  }
+}

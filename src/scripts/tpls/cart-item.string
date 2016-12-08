@@ -1,0 +1,23 @@
+<li class="item-info" data-id="{{id}}">
+  <div class="left">
+    <img class="thumbnail" data-original="{{thumbnail}}" src="/images/huang/EmptyList@2x.png"/>
+  </div>
+  <div class="right">
+    <div class="head">
+      <h4>{{name}}</h4>
+      <i class="fdayicon fdayicon-delete"></i>
+    </div>
+    <span class="body">
+      规格:
+      <span class="guige-count">{{guige}}</span>个
+    </span>
+    <div class="foot">
+      <span class="price"><i>￥{{discount}}</i></span>
+      <div class="items">
+        <span class="btn minus">-</span>
+        <input type="text" class="count" value="1" disabled>
+        <span class="btn add">+</span>
+      </div>
+    </div>
+  </div>
+</li>
