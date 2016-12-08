@@ -1,6 +1,6 @@
 # dayfruit
 
-我的第一个项目，仿 [天天果园](http://m.fruitday.com/) 的 webapp。
+我的第一个项目，和朋友们做的项目，仿 [天天果园](http://m.fruitday.com/) 的 webapp。
 
 刚刚一看，它竟然更新了，不过有许多页面还是没有变动，而且还是 touch 应用，不是 spa。
 
