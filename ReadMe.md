@@ -8,6 +8,8 @@
 
 项目使用 gulp+webpack 模式，gulp 管理项目工程化，webpack 编译压缩 js 文件。
 
+并没有使用前后端分离，当初都不懂。
+
 1. 安装 node_modules
 	
 		dayfruit% npm install
