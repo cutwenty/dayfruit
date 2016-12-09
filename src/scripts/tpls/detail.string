@@ -1,9 +1,9 @@
 <header>
-  <span class="left"><a href="http://localhost:8090/index.html"><i class="fdayicon fdayicon-home"></i></a></span>
+  <span class="left"><a href="/dayfruit/index.html"><i class="fdayicon fdayicon-home"></i></a></span>
   <span class="title">产品详情</span>
   <span class="right">
-    <a href="http://localhost:8090/cart.html"><i class="fdayicon fdayicon-cart"></i></a>
-    <a href="http://localhost:8090/login.html"><i class="fdayicon fdayicon-login"></i></a>
+    <a href="/dayfruit/cart.html"><i class="fdayicon fdayicon-cart"></i></a>
+    <a href="/dayfruit/login.html"><i class="fdayicon fdayicon-login"></i></a>
   </span>
 </header>
 <section class="content">
@@ -88,7 +88,7 @@
         </div>
       </div>
       <div class="scroll-foot">
-          <img src="/images/huang/arrow.png"/>
+          <img src="/dayfruit/images/huang/arrow.png"/>
           <span>上拉加载更多...</span>
       </div>
   </div>

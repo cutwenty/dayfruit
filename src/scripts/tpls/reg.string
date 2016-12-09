@@ -32,7 +32,7 @@
          <div class="username">
            <input id="checknum" class="check" type="text" name="name" value="" placeholder="请输入验证码">
            <span class="checkimg">
-              <img src="/images/yan/1.jpg" alt="验证码">
+              <img src="/dayfruit/images/yan/1.jpg" alt="验证码">
            </span>
          </div>
          <div class="username">

@@ -5,9 +5,9 @@ var path = require('path');
 module.exports = function(req, res, next) {
   var urlObj = url.parse(req.url,true);
   switch (urlObj.pathname) {
-  case '/get/goodDetails': getGoodDetails(urlObj, res, next); break;
-  case '/get/detailEnval': getDetailEnval(urlObj, res, next); break;
-  case '/get/userCart': getUserCart(urlObj, res, next); break;
+  case '/dist/api/goodDetails': getGoodDetails(urlObj, res, next); break;
+  case '/dist/api/detailEnval': getDetailEnval(urlObj, res, next); break;
+  case '/dist/api/userCart': getUserCart(urlObj, res, next); break;
   default: next(); break;
   }
   return;

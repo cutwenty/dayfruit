@@ -6,7 +6,7 @@ var path = require('path');
 module.exports = function(req, res, next) {
   var urlObj = url.parse(req.url, true);
   switch (urlObj.pathname) {
-    case '/api/user':
+    case '/dist/api/user':
       res.setHeader('Content-Type', 'application/json');
       fs.readFile('./mock/user.json', function(err, data) {
         console.log(urlObj.pathname);
@@ -14,7 +14,7 @@ module.exports = function(req, res, next) {
       });
       //...
       return;
-    case '/api/reg':
+    case '/dist/api/reg':
       res.setHeader('Content-Type', 'application/json');
       fs.appendFile('./mock/user.json', "012345", function(err, data) {
             res.end(data);

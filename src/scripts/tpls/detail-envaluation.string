@@ -12,7 +12,7 @@
   <p class="body">{{body}}</p>
   <div class="envaluation-shows">
     {{each showImgs as img i}}
-    <img class="envaluation-img" data-original="{{img}}" src="/images/huang/EmptyList@2x.png"/>
+    <img class="envaluation-img" data-original="{{img}}" src="/dayfruit/images/huang/EmptyList@2x.png"/>
     {{/each}}
   </div>
   <span class="foot">{{time}}</span>

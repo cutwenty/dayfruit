@@ -2,25 +2,25 @@ $baseColor: #64a131;
 html, body {
   font-size: 31.24vw;
   width: 100%;
+  height: 100%;
 }
 
-body {
-  @include flexbox();
-}
 
 .container {
-  @include flex(1);
-  @include flexbox();
+  height: 100%;
+  @include flexbox;
   @include flex-direction(column);
   header {
     width: 100%;
     height: .44rem;
+    z-index: 9999;
     ul {
       @include flexbox();
       width: 100%;
       height: 100%;
       background: $baseColor;
       li {
+        @include flex;
         color: white;
         font-size: .18rem;
         @include flexbox();
@@ -35,11 +35,19 @@ body {
         &:not(:nth-child(2)) {
           font-size: .18rem;
           padding: .1rem;
-        }
-        &:nth-child(3) {
           a{
             color:white;
           }
+        }
+        &:nth-child(1) {
+          @include justify-content(flex-start);
+          @include flex(1);
+          padding-left: 20px;
+          font-size: .175rem;
+        }
+        &:nth-child(3) {
+          @include justify-content(flex-end);
+          padding-right: 20px;
           i {
             margin-left: .1rem;
           }
@@ -50,120 +58,118 @@ body {
   }
   section {
     background: white;
-    @include flex(1);
-    width: 100%;
-    overflow: hidden;
-    .swiper {
-      height: 100%;
-      width: 100%;
-      .down {
-        transform: rotate(180deg) !important;
-        -webkit-transform: rotate(180deg) !important;
-      }
-      .up {
-        transform: rotate(360deg) !important;
-        -webkit-transform: rotate(360deg) !important;
-      }
-      .scrollHead {
-        display: none;
-        font-size: 15px;
-        margin: 0 .1rem;
-        height: 30px;
-        line-height: 30px;
-        text-align: center;
-        img {
-          display: inline-block;
-          width: 20px;
-          height: 20px;
-          transform: rotate(180deg);
-          -webkit-transform: rotate(180deg);
-          transition: transform 150ms;
-          -webkit-transition: transform 150ms;
+    @include flex(1, column);
+      .scrollList {
+        .down {
+          transform: rotate(180deg) !important;
+          -webkit-transform: rotate(180deg) !important;
         }
-        i {
-          font-style: normal;
+        .up {
+          transform: rotate(360deg) !important;
+          -webkit-transform: rotate(360deg) !important;
+        }
+        .scrollHead {
+          display: none;
           font-size: 15px;
+          margin: 0 .1rem;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          img {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            transition: transform 150ms;
+            -webkit-transition: transform 150ms;
+          }
+          i {
+            font-style: normal;
+            font-size: 15px;
+          }
         }
-      }
-      ul {
-        li {
-          margin: 0 .1rem .1rem;
-          padding-bottom: 10px;
-          height: .96rem;
-          border-bottom:1px solid #e0e0e0;
-        /*  @include border(0 0 1px 0,#e0e0e0,solid);*/
-          position: static;
-          a {
-            width: 100%;
-            height: 100%;
-            @include flexbox();
-            @include flex-direction(row);
-            img {
-              position:absolute;
-              width: .85rem;
-              display: block;
-              box-shadow: 0 0 5px rgba(0, 0, 0, .2);
-            }
-            .listDel {
-              @include flex(1);
-              margin-left: .95rem;
-              position: relative;
-              p {
-                &:nth-child(1) {
-                  height: .2rem;
-                  margin: .05rem 0 0;
-                  font-size: .14rem;
-                  color: #323232;
-                }
-                &:nth-child(2) {
-                  margin: .05rem 0;
-                  font-size: .12rem;
-                  color: #a7a7a7;
-                  line-height: .2rem;
-                  @include ellipsis(1);
-                }
-                &:nth-child(3) {
-                  margin: .18rem 0 0 0;
-                  height: .25rem;
-                  font-size: .168rem;
-                  color: #f6ab00;
-                }
-              }
-              i{
+        ul {
+          li {
+            margin: 0 .1rem .1rem;
+            padding-bottom: 10px;
+            height: .96rem;
+            border-bottom:1px solid #e0e0e0;
+          /*  @include border(0 0 1px 0,#e0e0e0,solid);*/
+            position: static;
+            a {
+              width: 100%;
+              height: 100%;
+              @include flexbox();
+              @include flex-direction(row);
+              img {
                 position:absolute;
-                font-style: normal;
-                color:$baseColor;
-                font-size:.22rem;
-                bottom:0;
-                right:.05rem;
+                width: .85rem;
+                height: .85rem;
+                display: block;
+                box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+              }
+              .listDel {
+                @include flex(1);
+                margin-left: .95rem;
+                position: relative;
+                p {
+                  &:nth-child(1) {
+                    height: .2rem;
+                    margin: .05rem 0 0;
+                    font-size: .14rem;
+                    color: #323232;
+                  }
+                  &:nth-child(2) {
+                    margin: .05rem 0;
+                    font-size: .12rem;
+                    color: #a7a7a7;
+                    line-height: .2rem;
+                    @include ellipsis(1);
+                  }
+                  &:nth-child(3) {
+                    margin: .18rem 0 0 0;
+                    height: .25rem;
+                    font-size: .168rem;
+                    color: #f6ab00;
+                  }
+                }
+                i{
+                  position:absolute;
+                  font-style: normal;
+                  color:$baseColor;
+                  font-size:.22rem;
+                  bottom:0;
+                  right:.05rem;
 
+                }
               }
             }
           }
+          li:nth-child(1) {
+            margin-top: .1rem;
+          }
         }
-        li:nth-child(1) {
-          margin-top: .1rem;
-        }
-      }
-      .scrollF {
-        display: none;
-        font-size: 15px;
-        margin: 0 .1rem;
-        height: 30px;
-        line-height: 30px;
-        text-align: center;
-        img {
-          display: inline-block;
-          width: 20px;
-          height: 20px;
-          transition: transform 150ms;
-          -webkit-transition: transform 150ms;
-        }
-        i {
-          font-style: normal;
+        .scrollF {
+          display: none;
           font-size: 15px;
+          margin: 0 .1rem;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          img {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            transition: transform 150ms;
+            -webkit-transition: transform 150ms;
+          }
+          i {
+            font-style: normal;
+            font-size: 15px;
+          }
         }
-      }
+
 
     }
   }

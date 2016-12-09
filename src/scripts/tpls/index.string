@@ -1,20 +1,20 @@
 <div class="w-container">
   <header>
     <div class="head w-left">
-      <a href="./where.html" style="color:#fff;">
+      <a href="/dayfruit/where.html" style="color:#fff;">
         <span class="fdayicon fdayicon-local"></span>
         <span class="curr-region-name"></span>
       </a>
     </div>
     <div class="head w-center">
-      <span class="navbar-title"><img src="/dayfruit/images/wang/logo.svg"></span>
+      <img src="/dayfruit/images/wang/logo.svg">
     </div>
     <div class="head w-right">
-      <a href="about-us.html" style="color:#fff;">
+      <a href="/dayfruit/about-us.html" style="color:#fff;">
         <span class="glyphicon glyphicon-info-sign"></span>
       </a>
       <span class="fdayicon fdayicon-contact"></span>
-      <a href="cart.html" style="color:#fff;">
+      <a href="/dayfruit/cart.html" style="color:#fff;">
         <span class="fdayicon fdayicon-cart">
           <i class="cart-sale-nums"></i>
         </span>
@@ -100,7 +100,7 @@
 <script id="list" type="text/html">
   <ul class="index-list">
     {{each data as value i}}
-    <li><a href = detail.html?id={{value.id}}><img src = /dayfruit/images/wang/{{value.img}} alt=""></a></li>
+    <li><a href = /dayfruit/detail.html?id={{value.id}}><img src = /dayfruit/images/wang/{{value.img}} alt=""></a></li>
     {{/each}}
   </ul>
 </script>

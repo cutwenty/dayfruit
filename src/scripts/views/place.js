@@ -7,27 +7,31 @@ var str=localStorage.getItem("city")||"北京";
 $.ajax({
   url:'/dayfruit/api/place',
     success: function (res) {
+      var data;
         for( city in res){
             if (res[city].name==str){
-                var data=res[city].Data;
+                data=res[city].Data;
             }
         }
         if(data){
             var html = template('list', data);
             $("#city_scroll").html(html);
         }else {
-            $("#city_scroll")[0].style.background="url('/images/zong/noservice.svg') no-repeat center 20%";
+            $("#city_scroll")[0].style.background="url('/dayfruit/images/zong/noservice.svg') no-repeat center 20%";
         }
+      setTimeout(function () {
+        init();
+      });
     },
     complete:function(){
         $('#city_scroll ul li').on("tap",function(){
             localStorage.setItem("place",$(this).find("p:nth-child(1)").html()+"&&"+$(this).find("p:nth-child(2)").html());
-            window.location.href="allGoods.html";
+            window.location.href="/dayfruit/allGoods.html";
         })
     }
 });
 
-window.onload = function () {
+var init = function () {
 
     var myScroll = new IScroll('#city_scroll', {
         probeType: 3,
@@ -66,7 +70,7 @@ window.onload = function () {
                     if(data){
                         $("#city_scroll")[0].style.background="none";
                     }else {
-                        $("#city_scroll")[0].style.background="url('/images/zong/noservice.svg') no-repeat center 20%";
+                        $("#city_scroll")[0].style.background="url('/dayfruit/images/zong/noservice.svg') no-repeat center 20%";
                     }
             },
             complete:function(){
@@ -96,7 +100,7 @@ window.onload = function () {
                         $("#city_scroll").html(html);
                         if(data){
                         }else {
-                            $("#city_scroll")[0].style.background="url('/images/zong/noservice.svg') no-repeat center 20%";
+                            $("#city_scroll")[0].style.background="url('/dayfruit/images/zong/noservice.svg') no-repeat center 20%";
                         }
                 },
                 complete:function(){

@@ -34,7 +34,7 @@ html, body {
             width: 18px;
             height: 25px;
             line-height: .3rem;
-            background: url('/images/liqi/search-icon.png') 0 -47px;
+            background: url('/dayfruit/images/liqi/search-icon.png') 0 -47px;
             background-size: 100%;
             color: #a7a7a7;
             font-size: .175rem;
@@ -46,6 +46,7 @@ html, body {
             font-size: .14rem;
             width: 100%;
             height: .3rem;
+            border: 0 solid #fff;
             @include border(1px #ccc solid);
             /*border:1px solid #ccc;*/
             @include box-sizing();
@@ -132,9 +133,17 @@ html, body {
               color: #323232;
               text-align: center;
               font-size: .12rem;
-              img {
+              .wrapper {
                 width: 100%;
-                margin-bottom: .05rem;
+                padding-bottom: 100%;
+                position: relative;
+                img {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  margin-bottom: .05rem;
+                }
               }
             }
           }

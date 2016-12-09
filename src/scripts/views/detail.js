@@ -5,7 +5,7 @@ require('../utils/common.util.js');
 
 
 $.ajax({
-  url: '/dayfruit/get/goodDetails?id=6271',
+  url: '/dayfruit/api/goodDetails?id=6271',
   success: function (res) {
     var compile = template.compile(str);
     var html = compile(res);
@@ -39,7 +39,7 @@ function init() {
     scrollFoot: '.scroll-foot',
     loadCallBack: function($foot) {
       $.ajax({
-        url: '/get/detailEnval?id=6271',
+        url: '/dayfruit/api/detailEnval?id=6271',
         success: function(res) {
           loadEnvaluation(function() {
             $foot.stopLoad();
@@ -53,7 +53,7 @@ function init() {
   // swiper，显示分页器、自动播放
   new Swiper('.banner', {
     pagination : '.swiper-pagination',
-    autoplay: 2000,
+    autoplay: 3000,
     autoplayDisableOnInteraction:false,
     loop: true
   });
@@ -175,14 +175,14 @@ function init() {
     });
   });
   $('.buy-btn').on('tap', function() {
-    var url = 'http://localhost:8090/cart.html';
+    var url = '/dayfruit/cart.html';
     location.href = url;
   });
 }
 
 function loadEnvaluation(fn) {
   $.ajax({
-    url: '/get/detailEnval?id=6271',
+    url: '/dayfruit/api/detailEnval?id=6271',
     success: function(res) {
       $('.envaluation-list').append(createEnvaluations(res));
       async(function() {
@@ -218,7 +218,6 @@ function async(func) {
     func();
   }, 10);
 }
-
 
 module.exports = {
   scrollContent: scroll

@@ -17,10 +17,13 @@ $.ajax({
 
         var html = template('list', data);
         $("#city_scroll").html(html);
+      setTimeout(function () {
+        init();
+      });
     }
 });
 
-window.onload = function () {
+var init = function () {
   var myScroll = new IScroll('#city_scroll', {
       probeType: 3,
       mouseWheel: true

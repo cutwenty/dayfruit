@@ -118,8 +118,7 @@ header {
                         }
                     }
                     .right {
-                        @include flex(1, column);
-                        height: 100%;
+                        @include flex;
                         padding-top: .05rem;
                         position: relative;
                         .head {
@@ -213,6 +212,7 @@ header {
                                     width: .28rem;
                                     padding: 0;
                                     color: #a7a7a7;
+                                    border: 0px solid #fff;
                                     text-align: center;
                                     font-size: .14rem;
                                 }

@@ -21,7 +21,7 @@ body{
                     color: #fff;
                     line-height: 44px;
                 }
-            } 
+            }
             div{
                 position: absolute;
                 left: 50%;
@@ -36,10 +36,11 @@ body{
             }
         }
         section{
-            flex: 1;
+            @include flex(1, column);
             @include  flexbox();
             @include  flex-direction(column);
             .where{
+              z-index: 9999;
                 h5{
                     font-weight: normal;
                     background: #f1f1f1;
@@ -48,16 +49,19 @@ body{
                     padding: 10px;
                 }
                 div{
+                  z-index: 9999;
                     padding: 10px 20px;
                     line-height: 22px;
                     font-size: 14px;
+                    background: #fff;
                 }
             }
             .city_list{
-                flex: 1;
+              @include flex(1, column);
                 @include  flexbox();
                 @include  flex-direction(column);
                 h5{
+                  z-index: 9999;
                     font-weight: normal;
                     background: #f1f1f1;
                     font-size: 14px;
@@ -65,8 +69,7 @@ body{
                     padding: 10px;
                 }
                 #city_scroll{
-                    height: 100%;
-                    overflow: hidden;
+                    @include flex(1, column);
                     ul{
                         padding: 0 10px;
                         li{

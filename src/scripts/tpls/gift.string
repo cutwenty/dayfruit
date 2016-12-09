@@ -3,7 +3,7 @@
     <ul>
       <li id="m-home" class="fdayicon-home fdayicon"></li>
       <li class="login">我的赠品</li>
-      <li class="reg"><a href="cart.html"><span class="fdayicon fdayicon-cart"></span></a></li>
+      <li class="reg"><a href="/dayfruit/cart.html"><span class="fdayicon fdayicon-cart"></span></a></li>
     </ul>
   </header>
   <section>

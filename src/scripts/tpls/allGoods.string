@@ -1,12 +1,12 @@
 <div class="container">
      <header>
          <ul>
-             <a href="index.html"><li class="fdayicon fdayicon-home"></li></a>
+             <a href="/dayfruit/index.html"><li class="fdayicon fdayicon-home"></li></a>
              <li>
                  <input type="search" placeholder="寻找鲜果" class="formHead">
              </li>
              <li>
-                <a href="cart.html" ><i class="fdayicon fdayicon-cart"></i></a>
+                <a href="/dayfruit/cart.html" ><i class="fdayicon fdayicon-cart"></i></a>
                  <i class="fdayicon fdayicon-login"></i>
              </li>
          </ul>
@@ -47,7 +47,8 @@
                 <script id="list" type="text/html">
                      <ul>
                         {{each data as value i}}
-                        <li><a href={{value.url}}><img src={{value.src}}>
+                        <li><a href={{value.url}}>
+                        <div class="wrapper"><img src={{value.src}}></div>
                                 {{value.name}}
                             </a>
                         </li>
@@ -76,19 +77,19 @@
         <div class="hotSearch">
             <p>热门搜索</p>
             <ul>
-                <li><a href="listGoods.html?0">奇异果</a></li>
-                <li><a href="listGoods.html?1">鸡</a></li>
-                <li><a href="listGoods.html?2">鱼</a></li>
-                <li><a href="listGoods.html?3">蓝莓</a></li>
-                <li><a href="listGoods.html?4">国外</a></li>
-                <li><a href="listGoods.html?5">蛋</a></li>
-                <li><a href="listGoods.html?6">年糕</a></li>
-                <li><a href="listGoods.html?7">梨</a></li>
-                <li><a href="listGoods.html?8">红提</a></li>
-                <li><a href="listGoods.html?9">脐橙</a></li>
-                <li><a href="listGoods.html?10">牛油果</a></li>
-                <li><a href="listGoods.html?11">榴莲</a></li>
-                <li><a href="listGoods.html?12">火龙果</a></li>
+                <li><a href="/dayfruit/listGoods.html?0">奇异果</a></li>
+                <li><a href="/dayfruit/listGoods.html?1">鸡</a></li>
+                <li><a href="/dayfruit/listGoods.html?2">鱼</a></li>
+                <li><a href="/dayfruit/listGoods.html?3">蓝莓</a></li>
+                <li><a href="/dayfruit/listGoods.html?4">国外</a></li>
+                <li><a href="/dayfruit/listGoods.html?5">蛋</a></li>
+                <li><a href="/dayfruit/listGoods.html?6">年糕</a></li>
+                <li><a href="/dayfruit/listGoods.html?7">梨</a></li>
+                <li><a href="/dayfruit/listGoods.html?8">红提</a></li>
+                <li><a href="/dayfruit/listGoods.html?9">脐橙</a></li>
+                <li><a href="/dayfruit/listGoods.html?10">牛油果</a></li>
+                <li><a href="/dayfruit/listGoods.html?11">榴莲</a></li>
+                <li><a href="/dayfruit/listGoods.html?12">火龙果</a></li>
             </ul>
         </div>
 

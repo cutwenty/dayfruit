@@ -17,7 +17,7 @@
         "url": "listGoods.html?1"
       },
       {
-        "src": "/images/liqi/more.png",
+        "src": "/dayfruit/images/liqi/more.png",
         "name": "全部",
         "url": "listGoods.html?1"
       }
@@ -41,7 +41,7 @@
         "url": "listGoods.html?0"
       },
       {
-        "src": "/images/liqi/more.png",
+        "src": "/dayfruit/images/liqi/more.png",
         "name": "全部",
         "url": "listGoods.html?2"
       }

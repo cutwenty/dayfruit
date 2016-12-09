@@ -1,5 +1,5 @@
 <header>
-  <a href="http://localhost:8090/index.html"><span class="left"><i class="fdayicon fdayicon-home"></i></span></a>
+  <a href="/dayfruit/index.html"><span class="left"><i class="fdayicon fdayicon-home"></i></span></a>
   <span class="title">购物车</span>
   <a href="#"><span class="right"><i class="fdayicon fdayicon-login"></i></span></a>
 </header>

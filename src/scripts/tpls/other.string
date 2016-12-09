@@ -1,7 +1,7 @@
 <div class="w-container">
   <header>
     <div class="head w-left">
-      <a href="./index.html" class="home">
+      <a href="/dayfruit/index.html" class="home">
         <span class="fdayicon fdayicon-home"></span>
       </a>
     </div>
@@ -9,7 +9,7 @@
       <span class="navbar-title">我的果园</span>
     </div>
     <div class="head w-right">
-      <a href="cart.html" style="color:#fff;">
+      <a href="/dayfruit/cart.html" style="color:#fff;">
         <span class="fdayicon fdayicon-cart">
           <i class="cart-sale-nums"></i>
         </span>
@@ -21,13 +21,13 @@
     <div id="other-scroll">
       <div class="scroll-content">
         <div class="user-info-box">
-          <div class="user-head"><img src="/images/wang/default_userpic.png" alt=""></div>
+          <div class="user-head"><img src="/dayfruit/images/wang/default_userpic.png" alt=""></div>
           <span class="user-phone"></span>
         </div>
         <ul class="user-content">
           <li>
             <div class="user-item">
-               <a href="order.html" class="user-order">我的订单</a>
+               <a href="/dayfruit/order.html" class="user-order">我的订单</a>
             </div>
             <div class="user-item">
                <a href="javascript:void(0);" class="user-address">
@@ -47,15 +47,15 @@
                <a class="user-balance">余额<span class="pull-right">￥0.00</span></a>
             </div>
             <div class="user-item">
-               <a href="coupon.html" class="user-coupon">优惠券</a>
+               <a href="/dayfruit/coupon.html" class="user-coupon">优惠券</a>
             </div>
             <div class="user-item">
-               <a href="gift.html" class="user-gift">我的赠品</a>
+               <a href="/dayfruit/gift.html" class="user-gift">我的赠品</a>
             </div>
           </li>
           <li>
             <div class="user-item">
-                <a href="about-us.html" class="user-info">关于我们</a>
+                <a href="/dayfruit/about-us.html" class="user-info">关于我们</a>
             </div>
           </li>
         </ul>

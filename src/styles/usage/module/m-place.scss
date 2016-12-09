@@ -40,6 +40,7 @@ body{
             @include  flexbox();
             @include  flex-direction(column);
             .shuru{
+              z-index: 9999;
                 @include  flexbox();
                 align-items:center;
                 height: 44px;
@@ -59,7 +60,7 @@ body{
                         height: 18px;
                         position: absolute;
                         left: 5px;
-                        background: url("/images/zong/s1.png") no-repeat center;
+                        background: url("/dayfruit/images/zong/s1.png") no-repeat center;
                     }
                     input{
                         font-size: 14px;
@@ -91,8 +92,10 @@ body{
                 }
             }
             .now_place{
+              z-index: 9999;
+              background: #fff;
                 height: 36px;
-                padding: 0 15px;
+                padding: 0 15px 30px 15px;
                 border-bottom: 1px solid #aaa;
                 position: relative;
                 span{
@@ -114,10 +117,12 @@ body{
                     position: absolute;
                     right: 5px;
                     top: 6px;
-                    background: url("/images/zong/s2.png") no-repeat center;
+                    background: url("/dayfruit/images/zong/s2.png") no-repeat center;
                 }
             }
             .change{
+              z-index: 9999;
+              background: #fff;
                 height: 36px;
                 color: #a4a4a4;
                 line-height: 36px;
@@ -130,11 +135,12 @@ body{
                 }
             }
             .tip{
-                margin-top: 30px;
+              z-index: 9999;
+              background: #fff;
                 border-bottom: 1px solid #aaa;
                 height: 30px;
                 padding: 7px 15px;
-                background: #f0eff3 url("/images/zong/s3.png") no-repeat 14px center;
+                background: #f0eff3 url("/dayfruit/images/zong/s3.png") no-repeat 14px center;
                 background-size: 16px 18px;
                 i{
                     padding-left: 18px;
@@ -145,8 +151,7 @@ body{
                 }
             }
             #city_scroll{
-                height: 100%;
-                overflow: hidden;
+                @include flex(1, column);
                 ul{
                     margin-top: -1px;
                     li{

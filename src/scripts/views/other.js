@@ -8,8 +8,8 @@ window.onload = function(){
 
   if(common.isLogin()){//已经登录
     init();
-  }else{//未登录 
-    window.location.href = "../../login.html";
+  }else{//未登录
+    window.location.href = "/dayfruit/login.html";
   }
 }
 //初始化界面

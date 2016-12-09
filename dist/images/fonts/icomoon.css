@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'icomoon';
+    src:url('/dayfruit/images/fonts/icomoon.eot');
+    src:url('/dayfruit/images/fonts/icomoon.eot') format('embedded-opentype'),
+    url('/dayfruit/images/fonts/icomoon.woff') format('woff'),
+    url('/dayfruit/images/fonts/icomoon.ttf') format('truetype'),
+    url('/dayfruit/images/fonts/icomoon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fdayicon{font-family: 'icomoon'}
+.fdayicon-local:before{content: '\e60a';}
+.fdayicon-login:before{content: '\e60c';}
+.fdayicon-cart:before{content: '\e60d';}
+.fdayicon-home:before{content: '\e60b'; }
+
+.fdayicon-day:before{content: '\e900';}
+.fdayicon-account:before{content: '\e901';}
+.fdayicon-pay:after{content: '\e624';}
+.fdayicon-all:before{content: '\e609';}
+.fdayicon-order:before{content: '\e607';}
+.fdayicon-contact:before{content: '\e606';}
+.fdayicon-client:before{content: '\e605';}
+.fdayicon-procart:before{content: '\e603';}
+.fdayicon-toTop:before{content: '\e604';}
+.fdayicon-star-full:before{content: '\e601';}
+.fdayicon-star-empty:before{content: '\e600';}
+.fdayicon-appraise:before{content: '\e602';}
+.fdayicon-proselect:before{content:'\e60e';}
+.fdayicon-loading:before{content:'\e60f';}
+.fdayicon-delete:before{content:'\e61f';}
+.fdayicon-notice:before{content:'\e61e';}
+.fdayicon-right:before{content:'\e610';}
+.fdayicon-unfold:before{content:'\e622';}
+.fdayicon-fold:before{content:'\e623';}
+.fdayicon-edit:before{content:'\e626';}
+.fdayicon-close:before{content:'\e62a';}
+.fdayicon-back:before{content:'\e62b';}
+.fdayicon-add:before{content:'\e62c';}
+.fdayicon-navback:before{content:'\e62d';}
+.fdayicon-delivery:before{content:'\e62e';}
+.fdayicon-message:before{content:'\e630';}
+.fdayicon-userorder:before{content:'\e63d';}
+.fdayicon-coupon:before{content:'\e63b';}
+.fdayicon-paysuc:before{content:'\e62f';}
+.fdayicon-donate:before{content:'\e63e';}
+.fdayicon-info:before{content:'\e647';}
+/*
+    *     new add icon of xiaomi life
+    *         bg rose 20150629
+    *         */
+.fdayicon-import:before{content:'\e648';}
+.fdayicon-domestic:before{content:'\e649';}
+.fdayicon-newpro:before{content:'\e64a';}
+.glyphicon-pencil:before {content: "\270f";}
+.glyphicon-send:before {content: "\e171";}
+@font-face{
+  font-family: 'glyphicon';
+    src:url('/dayfruit/images/fonts/glyphicons-halflings-regular.woff') format('woff');
+}
+
+.glyphicon{font-family: 'glyphicon';}
+.glyphicon-user:before{content: "\e008";}
+.glyphicon-lock:before {content: "\e033";}
+.glyphicon-info-sign:before{content:"\e086";}
+.glyphicon-remove:before {content: "\e014";}

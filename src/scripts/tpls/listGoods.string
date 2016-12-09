@@ -1,7 +1,9 @@
 <div class="container">
     <header>
         <ul>
-            <a href="index.html"><li class="fdayicon fdayicon-home"></li></a>
+            <li><a href="/dayfruit/index.html">
+            <i class="fdayicon fdayicon-home"></i>
+            </a></li>
             <li>
                 奇异果
             </li>
@@ -12,27 +14,25 @@
 
                     </span>
                 </i>
-                </a> 
+                </a>
                <i class="fdayicon fdayicon-login"></i>
             </li>
         </ul>
     </header>
     <section>
-        <div class="swiper">
             <div class="scrollList">
                 <div class="scrollHead">
-                    <img src="/images/liqi/arrow.png">
+                    <img src="/dayfruit/images/liqi/arrow.png">
                     <i>下拉刷新... </i>
                 </div>
                 <ul>
                 </ul>
                 <div class="scrollF">
-                    <img src="/images/liqi/arrow.png">
+                    <img src="/dayfruit/images/liqi/arrow.png">
                     <i>上拉加载更多...</i>
 
                 </div>
             </div>
-        </div>
     </section>
 
 

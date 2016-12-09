@@ -20,6 +20,12 @@ $("#loginbtn").on("tap", function() {
                 obj.password = $("#password").val();
                 var str = JSON.stringify(obj);
                 sessionStorage.setItem("user", str);
+                $.dialog({
+                  content : '注册成功',
+                  title : 'ok',
+                  time: 2000,
+                  lock : false
+                });
               }else{
                 $(".tipbox").css("display", "block");
                 $("#tip").text("验证码错误");

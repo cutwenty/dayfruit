@@ -6,7 +6,7 @@ require('../utils/common.util.js');
 $('body').html(str);
 
 $.ajax({
-  url: '/dayfruit/get/userCart?id=18359928622',
+  url: '/dayfruit/api/userCart?id=18359928622',
   success: function (res) {
     if (res.length <= 0) {
       $('.blank-cart').show();
@@ -66,7 +66,7 @@ function init() {
       });
     }else {
       var id = $(this).attr('data-id');
-      var url = 'http://localhost:8090/detail.html?id='+id;
+      var url = '/dayfruit/detail.html?id='+id;
       location.href = url;
     }
   });
