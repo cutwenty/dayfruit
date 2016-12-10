@@ -50,14 +50,19 @@ $fontFamily:"microsoft yahei";
       @include flex(2);
       padding-top: 0.1rem;
       height:100%;
-      span{
-        &.fdayicon-local{
-          margin-left:0.1rem;
+      a {
+        @include flexbox;
+        @include align-items(center);
+        span{
+          &.fdayicon-local{
+            margin-left:0.1rem;
+          }
+          @include headfontIcon();
+          &.curr-region-name{
+            font: 0.14rem/24px 'microsoft yahei';
+          }
         }
-        @include headfontIcon();
-        &.curr-region-name{
-          font: 0.14rem/24px 'microsoft yahei';
-        }
+
       }
     }
     .w-right{
